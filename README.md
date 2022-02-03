@@ -4,9 +4,9 @@ O express, junto a outros mini frameworks, são nossos amigos na hora do desenvo
 
 ### Rodando o projeto
 
-1 - Baixe o nodejs
-2 - Clone o projeto `git clone https://github.com/feitoza-1929/Calc-Service.git`
-3 - Rode no diretório raiz do projeto `node app.js`
+- Baixe o nodejs
+- Clone o projeto `git clone https://github.com/feitoza-1929/Calc-Service.git`
+- Rode no diretório raiz do projeto `node app.js`
 
 ### Requisição API
 `GET localhost:5000/api/calc/id/x/y`
