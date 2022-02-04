@@ -20,7 +20,7 @@ Vamos destrinchar essa requisição, `id` é um numero de `1-4` que identifica n
    4 : ÷
 ```
 
-`x` e `y` são os números inteiros que serão calculados.
+`x` e `y` são os números naturais que serão calculados.
 
 Vamos fazer a requisição ? Okay.
 ```localhost:5000/api/calc/1/2/2```
