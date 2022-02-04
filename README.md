@@ -11,14 +11,18 @@ O express, junto a outros mini frameworks, são nossos amigos na hora do desenvo
 ### Requisição API
 `GET localhost:5000/api/calc/id/x/y`
 
-Vamos destrinchar essa requisição, `id` é um numero de `1-4` que identifica nossa operação aritmética `[1 : +, 2 : -, 3 : *, 4 : ÷]`.
+Vamos destrinchar essa requisição, `id` é um numero de `1-4` que identifica nossa operação aritmética 
+```
+# Números referentes as suas operações
+   1 : +
+   2 : -
+   3 : *
+   4 : ÷
+```
+
 `x` e `y` são os números inteiros que serão calculados.
 
 Vamos fazer a requisição ? Okay.
-`localhost:5000/api/calc/1/2/2`
+```localhost:5000/api/calc/1/2/2```
 Resultado esperado:
-```
-{
-	result: 4
-}
-```
+```{ result: 4 }```
