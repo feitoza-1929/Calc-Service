@@ -24,3 +24,5 @@ const server = http.createServer( async(req, res) => {
 server.listen(PORT, () => {
     console.log(`server started at localhost:${PORT}`)
 })
+
+module.exports = server
