@@ -1,0 +1,24 @@
+{
+  "name": "calc-service-nodejs",
+  "version": "1.0.0",
+  "description": "O express, junto a outros mini frameworks, são nossos amigos na hora do desenvolvimento de um serviço, devido a abstração que é feita.\r  Contudo eu sentia que não conhecia realmente nodejs, apenas seus frameworks . Por isso fiz esse pequeno serviço que recebe uma requisição do cliente e retorna o resultado de um calculo aritmético.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feitoza-1929/Calc-Service.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/feitoza-1929/Calc-Service/issues"
+  },
+  "homepage": "https://github.com/feitoza-1929/Calc-Service#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
