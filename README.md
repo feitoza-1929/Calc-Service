@@ -8,6 +8,11 @@ O express, junto a outros mini frameworks, são nossos amigos na hora do desenvo
 - Clone o projeto `git clone https://github.com/feitoza-1929/Calc-Service.git`
 - Rode no diretório raiz do projeto `node app.js`
 
+
+### Rodando os testes
+Agora temos testes na branch `tests`, você poderá está rodando-os com um simples comando
+`npm test`
+
 ### Requisição API
 `GET localhost:5000/api/calc/id/x/y`
 
