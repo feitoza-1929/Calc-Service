@@ -1,15 +1,10 @@
 const url = require("url")
 
-async function getUrlData(req) {
-    try {
+function getUrlData(req){
         let uri = url.parse(req.url, true).path
         let uriData = uri.replace(/(\/?\D)+/, '').split('/').map(d => +d)
 
-        return Promise.resolve(uriData)
-    }
-    catch (error){
-        return Promise.reject(error)
-    }
+        return uriData
 }
 
 module.exports = {getUrlData}
