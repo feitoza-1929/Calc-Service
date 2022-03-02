@@ -1,3 +1,4 @@
+export {}
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -12,6 +13,6 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-app.use('/',calcRouter)
+app.use('/', calcRouter)
 
-app.listen(port, () => console.log(`listenning at ${port}`))
+module.exports = app.listen(port)

@@ -1,34 +1,51 @@
-## Calc Service Doc
+## Tabela de Conteúdos
+- [Rodando Projeto](#rodando-projeto)
+	- [Service](#service)
+- [Testes](#testes)
+- [Detalhes do Service](#detalhes-do-serviço)
+	- [Estrutura Básica](#estrutura-básica)
+	- [Endpoints](#endpoints)
 
-### Rodando o projeto
-
-- Baixe o nodejs
-- Clone o projeto `git clone https://github.com/feitoza-1929/Calc-Service.git`
-- Rode no diretório raiz do projeto `node app.js`
-
-
-### Rodando os testes
-Agora temos testes na branch `tests`, você poderá está rodando-os com um simples comando
-`npm test`
-
-### Requisição API
-`GET localhost:5000/api/calc/id/x/y`
-
-Vamos destrinchar essa requisição, `id` é um numero de `1-4` que identifica nossa operação aritmética 
+## Rodando Projeto
 ```
-# Números referentes as suas operações
-   1 : +
-   2 : -
-   3 : *
-   4 : ÷
+# Clone o repositório
+ $ git clone https://github.com/feitoza-1929/Calc-Service.git
+ $ cd ./Calc-Service
 ```
 
-`x` e `y` são os números naturais que serão calculados.
+#### Service
 
-Vamos fazer a requisição ? 
+Para rodar o serviço, instale as dependências `npm i`. Agora inicie o servidor `npm start`
 
-```localhost:5000/api/calc/1/2/2```
+## Testes
+Para rodar os testes, basta está no diretório raiz e executar o seguinte comando: ` npm test`
 
-Resultado esperado:
+## Detalhes do Serviço
+#### Estrutura Básica
+Está sendo utilizada uma variação do padrão [MVC](https://pt.wikipedia.org/wiki/MVC)
 
-```{ result: 4 }```
+```
+root
+  ├───Controllers #Lógica de negócio
+  ├───Routes #Rota para o cliente iniciar a comunicação
+  └───Schema #Modelos de dados
+```
+#### Endpoints
+
+|Method   |    Endpoint       |Body Params  |
+|---------| ----------------- |----------------|
+|		POST  |http//:localhost:3005/calc| values: array  |
+|					|										| operator: string|
+
+
+Exemplo de Requisição:
+```
+express.post('http//:localhost:3005/calc', {
+	values: [2,3],
+	operator: "+"
+})
+.then(res => console.log(res))
+.catch(err => console.log(err))
+```
+
+
